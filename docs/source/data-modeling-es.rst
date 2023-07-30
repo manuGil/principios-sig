@@ -5,6 +5,8 @@
 Modelos de Datos Espaciales
 ============================
 
+*Prepare un reporte con respuestas a las preguntas en este ejercicio y envielo a través de Google Classroom.*
+
 Fenómenos geográficos
 -----------------------
 
@@ -18,13 +20,14 @@ Los fenómenos geográficos se pueden dividir en |ltb| `objetos geográficos <Ge
 
 .. attention::
     **Pregunta.**
-    Dé algunos ejemplos de fenómenos para los que falta uno de los tres elementos anteriores. ¿Se pueden utilizar en un SIG?
+    Dé algunos ejemplos de fenómenos que **no cumplen** con al menos una de las características de un fenómeno geográfico. ¿Se pueden utilizar en un SIG para representar los ejemplos que a selecionado? Explique su respuesta.
  
 Objetos y Campos
 ^^^^^^^^^^^^^^^^^^
 
-Práctica 1
-   Complete la siguiente tabla indicando si el fenómeno de la izquierda es un objeto o campo y si es discreto o continuo.
+.. attention:: 
+   **Pregunta.**
+   ¿Objetos o campos geográficos? Complete la siguiente tabla indicando si el fenómeno de la izquierda se puede clasificar como un objeto o  un campo geográfico, y si se trata de un campo discreto o continuo.
 
    +-----------------------+------------------+-------------------------+
    | Fenómeno              | Campo u Objecto  | Discreto o Continuo     |
@@ -47,9 +50,12 @@ Práctica 1
 Parámetros de Objetos Geográficos
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Práctica 2
-   ¿Qué parámetros de ubicación se pueden utilizar para describir objetos geográficos? No todos los parámetros que se pueden identficar son esenciales para todos los objetos.
-   ¿Cuáles de los parámetros de localización son importantes para los siguientes objetos geográficos?
+.. attention:: 
+   **Pregunta.**
+
+   + ¿Qué parámetros de ubicación se pueden utilizar para describir objetos geográficos? No todos los parámetros son esenciales para todos los objetos.
+
+   + ¿Cuáles de los parámetros de localización son importantes para los siguientes objetos geográficos?
 
    +---------------------+----------------+---------------+----------------+--------------+
    | Objeto              | Parámetro 1    | Parámetro 2   | Parámetro 3    |  Parámetro n |
@@ -81,12 +87,17 @@ Autocorrelación
 ^^^^^^^^^^^^^^^
 Hay un concepto más que requiere una introducción; la  |ltb| `autocorrelación espacial <Spatial autocorrelation_>`_. La autocorrelación espacial se basa en la primera ley de geografía de Tobler.
 
-Práctica 3
-   Defina con sus propias palabras qué es la autocorrelación espacial.
+.. attention:: 
+   **Pregunta.**
+
+   + ¿Puede definiir con sus propias palabras qué es la autocorrelación espacial? 
+   + ¿Puede dar un ejemplo de un fenómeno geográfico que muestre autocorrelación espacial?
 
 Aunque todas las representaciones informáticas (representaciones en una computadora) almacenan datos como representaciones finitas, es importante que se dé cuenta de que algunos fenómenos muestran autocorrelación.
 
 -------------------------
+
+[CONITNUE HERE]
 
 Representaciones informáticas
 -------------------------------
@@ -97,7 +108,7 @@ Ahora explorará diferentes tipos de representaciones informáticas para fenóme
 
 .. important:: 
    **Recurso**
-   Necesitará una versión reciente de `QGIS (Hannover 3.16) <https://qgis.org/downloads/QGIS-OSGeo4W-3.16.10-1.msi>`_, y el data set `data_modeling.zip <data_modeling_>`_.   Cuando descomprima el data set, encontrará los siguientes archivos dentro:
+   Necesitará una versión reciente de `QGIS (Firenze 3.28) <https://qgis.org/downloads/QGIS-OSGeo4W-3.28.9-1.msi>`_, y el data set `data_modeling.zip <data_modeling_>`_.   Cuando descomprima el data set, encontrará los siguientes archivos dentro:
   
    + ``Cities.csv`` – un archivo de valores separados por comas con nombres de ciudades;
 
