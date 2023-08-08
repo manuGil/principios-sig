@@ -110,7 +110,7 @@ Ahora explorará diferentes tipos de representaciones informáticas para fenóme
    **Recurso**
    Necesitará una versión reciente de `QGIS (Firenze 3.28) <https://qgis.org/downloads/QGIS-OSGeo4W-3.28.9-1.msi>`_, y el data set `data_modeling.zip <data_modeling_>`_.   Cuando descomprima el data set, encontrará los siguientes archivos dentro:
   
-   + ``Cities.csv`` – un archivo de valores separados por comas con nombres de ciudades;
+   + ``Cities2.csv`` – un archivo de valores separados por comas con nombres de ciudades;
 
    + ``Spatial_data_modelling.qgs`` – Un proyecto QGIS precargado con  datos;
 
@@ -147,17 +147,17 @@ Un tipo de datos *entero* es un número que no contiene decimales. A menudo se u
 
 
 Práctica 4
-   ¿Qué tipo de datos usaría para representar un campo discreto cuando se desea usar ona teselación? ¿Y para cuanod se trata de un campo continuo?
+   ¿Qué tipo de datos usaría para representar un campo discreto cuando se desea usar una teselación? ¿Y qué tipo de datos usaría cuando se trata de un campo continuo?
 
 Práctica 5
-   Los límites en las capas ráster son tanto artificiales como fijos (discretos). Esto tiene  sus ventajas y desventajas. ¿Puede dar algunos ejemplos de las ventajas y desventajas de los límites artificiales y fijos en capas ráster?
+   Los límites en las capas ráster son tanto artificiales como fijos (discretos). Esto tiene  sus ventajas y desventajas. ¿Puede dar algunos ejemplos de las ventajas y desventajas de límites artificiales y fijos en capas ráster?
 
 Práctica 6
    Abra el proyecto  *'spatial_data_modelling'* en QGIS  y explore las propiedades de la teselación que representa la elevación del terreno (``elevation.tif``).
 
    ¿Cuántas filas/columnas tiene el data set elevación.tif? ¿Son los valores de tipo entero o de punto flotante? ¿Cuáles son los valores mínimos y máximos de elevation que contiene el data set?
 
-   *Sugerencia: desde el panel de capas, haga clic derecho en la capa para acceder a las*   :guilabel:`Propiedades...`. *Una vez en el diálogo de propiedades, busque en el diálogo* :guilabel:`Information`.
+   *Sugerencia: desde el panel de capas, haga clic derecho en la capa para acceder a las*   :guilabel:`Propiedades...`. *Una vez en el diálogo de propiedades, busque en el diálogo* :guilabel:`Información`.
 
    .. image:: _static/img/layer-properties.png 
       :align: center
@@ -170,7 +170,7 @@ También hay |ltb| `teselaciones irregulares <Irregular tesselation_>`_. En tese
 
 .. attention:: 
    **Pregunta.**
-   A menudo se afirma que las teselaciones irregulares son más adaptables en comparación con las teselaciones regulares. ¿Qué se quiere decir exactamente con esto?
+   A menudo se afirma que las teselaciones irregulares son más adaptables en comparación con las teselaciones regulares. ¿Qué se quiere decir exactamente con esto? Explique.
    
 Práctica 7
    Aunque existen múltiples ejemplos de teselaciones irregulares, solo tienes que estudiar un ejemplo: “el Quadtree”. Si aún no está familiarizado con Quadtrees, consulte `Quadtree <https://en.wikipedia.org/wiki/Quadtree>`_ . La mejor manera de aprender cómo funcionan los Quadtrees es construir uno manualmente.
@@ -196,7 +196,7 @@ Epezaremos con las |ltb| `redes irregulares trianguladas <TINs_>`_. (TINs) porqu
 
 .. attention:: 
    **Pregunta.**
-   ¿Qué características tienen en común los TIN y los teselados?
+   ¿Qué características tienen en común los TIN y las teselaciones?
 
 
 Práctica 9
@@ -210,7 +210,7 @@ Práctica 9
    Puede que se sorprenda, pero no todas las triangulaciones son igualmente buenas. La triangulación estándar en un TIN es una triangulación de Delaunay. ¿Ha usado una triangulación Delaunay en la práctica anterior?
 
 Práctica 10
-   En su proyecto QGIS, hay una capa con puntos. Genere una triangulación de Delaunay y compare el resultado con la teselación que hizo en la práctica anterior.  
+   En su proyecto QGIS, hay una capa con puntos llamada `Points`. Genere una triangulación de Delaunay y compare el resultado con la teselación que hizo en la práctica anterior.  Siga los pasos en la siguinte figura.
 
 .. figure:: _static/img/create-tin.png
    :alt: Create triangulation QGIS
@@ -222,7 +222,7 @@ También se puede utilizar una triangulación para generar una superficie tesela
 
 
 Práctica 11
-    Cree una teselación con la herramienta **Interpolación TIN**; use como datos de entrada los puntos de anclaje que tiene en su proyecto QGIS. Luego, use la herramienta **Identificar objetos espaciales** para inspeccionar los valores de las celdas.
+    Cree una teselación con la herramienta **Interpolación TIN**; use como datos de entrada los puntos de anclaje que tiene en su proyecto QGIS: `Points`. Luego, use la herramienta **Identificar objetos espaciales** para inspeccionar los valores de las celdas.
 
 .. figure:: _static/img/create-tessellation.png
    :alt: Create tessellation QGIS
@@ -245,7 +245,7 @@ Práctica 11
 
 
 Práctica 12
-   Entre los datos, encontrará una tabla ``Cities2.csv``. Intente usar esta tabla para crear una capa de puntos en QGIS. Inicie un nuevo proyecto QGIS y agregue la capa a QGIS usando la opción :guilabel:`Texto delimitado`.
+   Entre los datos encontrará una tabla de datos llamada ``Cities2.csv``. Intente usar esta tabla para crear una capa de puntos en QGIS. Inicie un nuevo proyecto QGIS y agregue la capa a QGIS usando la opción :guilabel:`Texto delimitado`.
 
 .. figure:: _static/img/layer-from-csv.png
    :alt: Create layer from csv QGIS
