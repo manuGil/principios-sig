@@ -32,10 +32,10 @@ Principios de SIG: Tutorial
    apendices/shaded-terrain-models.rst
 
 
-.. Indices and tables
-.. ==================
+Indices and tables
+==================
 
-.. * :ref:`genindex` 
-.. * :ref:`search`
+* :ref:`genindex` 
+* :ref:`search`
 
 .. * :ref:`modindex`
