@@ -49,4 +49,25 @@ A lo largo de los ejercicios, usamos algunas convenciones para resaltar el conte
    **Pregunta.**
    Esto presentará preguntas que tendrá que responder durante los ejercicios e **incluirlas en el reporte de ejercicios despues de cada sesión**. Escriba las respuesta y si tienes dudas pregunta durante las sesiones en el aula virtual. Para preparar el reporte de ejercicios utilice la plantilla que se proporciona a través de Google Classroom.
 
+Lista de Ejercicios
+-------------------------
+
++----------------------------+-----------------------------------------+
+| Sesión                     | Ejercicios                              |
++============================+=========================================+
+| Sesión 1                   | Introducción a QGIS,                    |               
+|                            | 1. Modelos de datos espaciales          |
++----------------------------+-----------------------------------------+
+| Sesión 2                   | 2. Adquisición de datos                 |
+|                            | 3. Sistemas de referencia espacial      |
++----------------------------+-----------------------------------------+
+| Sesión 3                   | 4. Análisis de datos vectoriales        |
++----------------------------+-----------------------------------------+
+| Sesión 4                   | 5. Análisis de datos ráster             |
++----------------------------+-----------------------------------------+
+| Sesión 5                   | 6. Visualización cartográfica           |
++----------------------------+-----------------------------------------+
+| Sesión 6                   |  ---                                    |
++----------------------------+-----------------------------------------+
+
 .. sectionauthor:: Manuel G. Garcia
