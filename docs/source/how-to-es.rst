@@ -72,6 +72,4 @@ A lo largo de los ejercicios, usamos algunas convenciones para resaltar el conte
    **Pregunta.**
    Esto presentará preguntas que tendrá que responder durante los ejercicios e **incluirlas en el reporte de ejercicios despues de cada sesión**. Escriba las respuesta y si tienes dudas pregunta durante las sesiones en el aula virtual. Para preparar el reporte de ejercicios utilice la plantilla que se proporciona a través de Google Classroom.
 
-
-
 .. sectionauthor:: Manuel G. Garcia

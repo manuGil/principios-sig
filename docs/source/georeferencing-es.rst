@@ -4,11 +4,11 @@ Sistemas de Referencia Espacial
 Superficies de Referencia
 ----------------------------
 
-Usamos una |ltb| `Superficie de referencia <Reference surface_>`_ (es decir, sistema de referencia) para aproximar la forma de la Tierra. Un datum horizontal (también llamado datum geodésico) es un modelo utilizado para definir ubicaciones sobre la Tierra. Un |ltb| `datum vertical <Vertical datum_>`_ es un modelo utilizado para medir elevaciones, que está relacionado con el |ltb| `Geoide <Geoid_>`_. Las elevaciones suelen estar relacionadas con el nivel medio del mar, y la posición horizontal se mide utilizando un |ltb| `Elipsoide <Ellipsoid_>`_ como referencia.
+Usamos una |ltb| `Superficie de referencia <Reference surface_>`_ (o sistema de referencia) para aproximar la forma de la Tierra. Un datum horizontal (también llamado datum geodésico) es un modelo utilizado para definir ubicaciones sobre la Tierra. Un |ltb| `datum vertical <Vertical datum_>`_ es un modelo utilizado para medir elevaciones, que está relacionado con el |ltb| `Geoide <Geoid_>`_. Las elevaciones suelen estar relacionadas con el nivel medio del mar, y la posición horizontal se mide utilizando un |ltb| `Elipsoide <Ellipsoid_>`_ como referencia.
 
 .. attention:: 
    **Pregunta.**
-   En los Países Bajos, la elevación se mide tomando como referencia el nivel del agua en los canales de Amsterdam. Este datum vertical se llama *Normal Amsterdams Peil (NAP)*. Una gran parte de los Países Bajos se inundaría si no tuviéramos dunas o diques, ver:numref:`figsea-level`. De hecho, toda la tierra por debajo de 0 metros NAP sería mar. Los diferentes países miden la altura haciendo referencia a diferentes niveles medios del mar. ¿Por qué no utilizamos una sola medida para todos los países?
+   En los Países Bajos, la elevación se mide tomando como referencia el nivel del agua en los canales de Amsterdam. A éste datum vertical se llama *Normal Amsterdams Peil (NAP)*. Una gran parte de los Países Bajos se inundaría si no tuviéramos dunas o diques, ver:numref:`figsea-level`. De hecho, toda la tierra por debajo de 0 metros NAP sería mar. Los diferentes países miden la altura haciendo referencia a diferentes niveles medios del mar. ¿Por qué no utilizamos una sola medida para todos los países?
 
    .. _figsea-level:
    .. figure:: _static/img/sea-level-nl.jpg
@@ -28,14 +28,14 @@ Usamos una |ltb| `Superficie de referencia <Reference surface_>`_ (es decir, sis
 
 ----------------------------------------------------------
 
-Sistemas coordenados
-----------------------
+Sistemas de  coordenadas
+--------------------------
 
 En el mapeo, un |ltb| `sistema de coordenadas <Coordinate system_>`_ se utiliza para determinar de forma precisa la posición de un lugar sobre la superficie de la Tierra.
 
 .. important:: 
    **Recursos.**
-   Necesitará la última versión LTR de `QGIS (A Hannover 3.16) <https://qgis.org/en/site/forusers/download.html>`_, más los datos `georeferencing.zip <data_georeferencing_>`_. Cuando descomprima el archivo, encontrará los siguiente:
+   Necesitará la última versión LTR de `QGIS (Firenze 3.28) <https://qgis.org/downloads/QGIS-OSGeo4W-3.28.9-1.msi>`_, más los datos `georeferencing.zip <data_georeferencing_>`_. Cuando descomprima el archivo, encontrará los siguiente:
 
    + ``DEM10.tif`` (y archivos auxiliares) – un modelo digital de elavación en formato raster;
    + ``Topographical_map_dominica.tif`` – mapa raster (sin georeferencia);
@@ -57,15 +57,15 @@ Las coordenadas geográficas se expresan normalmente en dos formatos. En *Grados
 
 Por ejemplo, Enschede (ciudad en los Países Bajos) se ubica en:
 
-   + Latitud: :math:`52°13′05″ N` (formato GMS)       or       :math:`52.21806` (formato decimal)
-   + Longitud: :math:`6°53′44″ E` (formato GMS)       or       :math:`6.895556` (formato decimal)
+   + Latitud: :math:`52°13′05″ N` (formato GMS)       o       :math:`52.21806` (formato decimal)
+   + Longitud: :math:`6°53′44″ E` (formato GMS)       o       :math:`6.895556` (formato decimal)
 
 
 Práctica 2
    Utilice Google Maps para encontrar lo que hay en las siguientes coordenadas.
 
    ============   =============     =======================
-   Latitud        Longitud          ¿Qué hay en este lugar
+   Latitud        Longitud          ¿Qué hay en este lugar?
    ============   =============     =======================
    52°13′05″ N    6°53′44″ O        \
    52°13′05″ S    6°53′44″ E        \
@@ -88,7 +88,7 @@ Práctica 4
       **Pregunta.**
       
        #. ¿Hay algún dataset con un sistema de coordenadas geográficas?
-       #. ¿Qué sistema de coordenadas geográficas se utilizó?
+       #. ¿Qué sistema de coordenadas geográficas se utilizan?
 
 ----------------------------------------------------
 
@@ -97,17 +97,17 @@ Proyecciones de Mapas
 
 Una |ltb| `proyección cartográfica <Map projection_>`_ es una técnica matemáticamente para representar la superficie curva de la Tierra en un mapa plano. Aplanar una superficie esférica es una tarea imperfecta, como puede experimentar usted mismo cuando está pelando una naranja y tratando de aplanar la piel. Para representar la superficie de la Tierra en un mapa, usamos una proyección de mapa. Las proyecciones de mapas se establecen para propósitos específicos y todas tiene distorsiones. Por lo tanto, comprender la |ltb| `clasificación de las proyecciones cartográficas <Projection classification_>`_ es fundamental a la hora de elegir una proyección cartográfica adecuada.
 
-No importa qué proyección de mapa elija, siempre tendrá ciertas distorsiones. Puede experimentar con las distorciones para caso de la proyección de Mercator (ampliamente utilizada) usando este enlace: http://hive.sewanee.edu/pridepj0/286/mercatorMap.html
+No importa qué proyección de mapa elija, siempre tendrá ciertas distorsiones. Puede experimentar con las distorciones para caso de la proyección de Mercator (ampliamente utilizada) usando este enlace:https://bramus.github.io/mercator-puzzle-redux/
 
 
 .. attention:: 
    **Pregunta.**
    
-   + Suponga que desea producir un mapa a pequeña escala de Guatemala. El mapa debe mostrar las densidades de población de las diferentes municipios. ¿Qué tipo de proyección de mapa sugeriría (considere la clase de proyección, la propiedad y otros parámetros de proyección)? Esta herramienta interactiva puede ayudarle a seleccionar una proyección de mapa adecuada: http://projectionwizard.org
+   + Suponga que desea hacer un mapa a pequeña escala de Guatemala. El mapa debe mostrar las densidades de población de las diferentes municipios. ¿Qué tipo de proyección de mapa sugeriría (considere la clase de proyección, las propiedaded y otros parámetros de proyección)? Esta herramienta interactiva puede ayudarle a seleccionar una proyección de mapa adecuada: http://projectionwizard.org
    + ¿Cuál es la proyección cartográfica oficial para Guatemala?
 
 Práctica 5
-   Cargue los datasets vectoriales y ráster que descargó en nuevo proyecto de QGIS y responda las siguientes preguntas:
+   Cargue los datasets vectoriales y ráster que descargó al inicio de este tutorial en nuevo proyecto de QGIS y responda las siguientes preguntas:
    
    + ¿Hay datasets que utilicen una proyección cartográfica?
    + ¿Qué sistema de coordenadas geográficas utilizan los datasets que están proyectados?
@@ -128,22 +128,22 @@ Transformación de Coordenadas
 
 
 Los usuarios de información geográfica a menudo necesitan transformar datasets de un sistema de coordenadas en particular a otro. Las |ltb| `Transformaciones de coordenadas <Coordinate transformation_>`_ son necesarias porque algunos análisis requieren unidades de medida planas.
-En otros casos, el usuario del mapa tiene requisitos especiales sobre cómo representar datos espaciales en un mapa.
+En otros casos, el usuario del mapa tiene requisitos especiales sobre cómo representar datos en un mapa.
 
 .. attention:: 
    **Pregunta.**
    Quizás haya notado que las siguientes capas tienen diferentes sistemas de coordenadas y datums: *'DEM'*, *'floodzones'*, *'highways'*, *'parish'* y *'rivers'*.
    
-    + ¿Qué problemas pueden surgir al dejar estas capas con sus sistemas de coordenadas actuales?
-    + Si tuviera que transformar todas las capas a un misto sistema de coordenadas, ¿qué sistema de coordenadas elegiría? ¿Qué criterios determinan la elección de un sitema de coordenadas común? 
+    + ¿Qué problemas pueden surgir al utilizar estas capas en el mismo mapa con sus sistemas de coordenadas actuales?
+    + Si tuviera que transformar todas las capas a un misto sistema de coordenadas, ¿qué sistema de coordenadas elegiría? ¿Qué criterios utilizaría para elegir de un sistema de coordenadas común? 
 
 
 Práctica 6
-   Después de elegir un sistema de coordenadas proyectadas y un datum para sus datasets, use QGIS para hacer las transformaciones (re-proyecciones). Preste atención a si las capas requieren una transformación de proyección  o una transformación de proyección y datum. **El orden en el que applican las transformaciones es muy importante.**
+   Después de elegir un sistema de coordenadas proyectadas y un datum para las capas que se mencionan en la pregunta anterior, use QGIS para hacer las transformaciones (re-proyecciones) correspondiente. Preste atención a si las capas requieren una transformación de proyección  o una transformación de proyección y datum. **El orden en el que applican las transformaciones es muy importante.**
 
 .. note:: 
    **QGIS.**
-   Si necesita ayuda, cosulte el manual de QGIS, sección `proyectando y transformando datos <https://docs.qgis.org/3.16/es/docs/training_manual/vector_analysis/reproject_transform.html>`_.
+   Si necesita ayuda, cosulte el manual de QGIS, sección `proyectando y transformando datos <https://docs.qgis.org/3.28/es/docs/training_manual/vector_analysis/reproject_transform.html>`_.
 
 Práctica 7
    A veces, al visualizar datos en QGIS, algunas de las capas no se alinean entre sí. Esto puede deberse a que una capa tiene definido un sistema de coordenadas **desconocido o incorrecto**. O la capa no está *georreferenciada* (no hace referencia a ningún sistema de coordenadas). ¿Tiene alguna capa que no se alinea con el resto de las capas en su proyecto actual?
