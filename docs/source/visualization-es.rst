@@ -78,7 +78,7 @@ Práctica 3
 Crear un Mapa Topográfico
 --------------------------
 
-En esta sección, creará un mapa topográfico a pequeña escala de una parte de Suiza, que incluya la representación del terreno en 3D utilizando sombreado del terreno y tintes de capa. **El mapa deberá ser entregado como parte de la tarea** `Mapa Topografico <https://classroom.google.com/c/MzA1NjU2MTIyODcz/a/NDExMjY4NzkwMzEz/details>`_, con un valor de **10 puntos**.
+En esta sección, creará un mapa topográfico a pequeña escala de una parte de Suiza, que incluya la representación del terreno en 3D utilizando sombreado del terreno y tintes de capa. **El mapa deberá ser entregado como parte de la tarea** `Mapa Topografico <https://classroom.google.com/c/NjE1NzAzMTI0MDcw/a/NjE1NzAzMTI0MTYz/details>`_, con un valor de **10 puntos**.
 
 Pare esta tarea seguirá el principio de "buscar, probar y aprender". Eso significa que no se le mostrará cómo hacer las cosas. En su lugar, se le pedirá que realice tareas específicas y  se le proporciona información relevante que le ayudará a completar las tarea. Las habilidades en QGIS que necesitará para este ejercicio son las mismas que aprendió en ejercicios anteriores.
 
@@ -86,13 +86,13 @@ Concéntrese en la producción de un mapa bien diseñado cartográficamente. Ser
 
 .. important:: 
     **Recursos.**
-    Necesitará la última versión LTR de `QGIS (Hannover 3.16) <https://qgis.org/en/site/forusers/download.html>`_, y los  datos `visualization.zip <visualisation_>`_.
+    Necesitará la última versión LTR de `QGIS (Firenze 3.28) <https://qgis.org/downloads/QGIS-OSGeo4W-3.28.9-1.msi>`_, y los  datos `visualization.zip <visualisation_>`_.
 
 Material de Referencia
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 + Ejercicios anteriores, usando QGIS;
-+ El `manual de aprendizaje de QGIS <https://docs.qgis.org/3.16/es/docs/training_manual/index.html>`_ y la `guía de usuario de QGIS <https://docs.qgis.org/3.16/es/docs/user_manual/index.html>`_.
++ El `manual de aprendizaje de QGIS <https://docs.qgis.org/3.28/es/docs/training_manual/index.html>`_ y la `guía de usuario de QGIS <https://docs.qgis.org/3.28/es/docs/user_manual/index.html>`_.
 + el material de lectura y diapositivas sobre visualización cartográfica (disponible en Classroom);
 + El apéndice sobre :ref:`shaded-models`, que contiene introducciones  para crear un modelo de sombras del terreno y el uso de otras herramientas útiles.
 
